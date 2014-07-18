@@ -4,7 +4,7 @@ OS_USERNAME: ansible
 OS_PASSWORD: passwd
 OS_TENANT_NAME: admin
 OS_AUTH_URL: http://{{ hostvars[inventory_hostname]['ansible_eth1']['ipv4']['address'] }}:35357/v2.0
-OS_SERVICE_TOKEN: 5ha4AaBaIJNCkJdYJiuz
+OS_SERVICE_TOKEN: B546dJp_aaXguW7btlCP
 DEV_USERNAME: dev
 DEV_PASSWORD: passwd
 DEV_TENANT_NAME: dev01
@@ -15,5 +15,5 @@ QA_USERNAME: qa
 QA_PASSWORD: passwd
 QA_TENANT_NAME: qa01
 KEY_NAME: controller-key
-TENANT_NETWORK: 49a464ca-3bfd-44a3-855e-c89437b96bf3
+TENANT_NETWORK: 523349a5-0a4e-4dd2-aba4-ed8e2c381a55
 VOL_ID: 
