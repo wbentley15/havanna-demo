@@ -10,7 +10,7 @@
   command: glance --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }} image-create --name centos-6.5 --is-public true --container-format bare --disk-format qcow2 --copy-from http://mirror.catn.com/pub/centos/6.5/os/x86_64/images/install.img
   
 - name: Import new VM image to QA environment
-  command: glance --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }} image-create --name rhel-5.6 --is-public false --owner qa01 --container-format bare --disk-format qcow2 --copy-from http://c250663.r63.cf1.rackcdn.com/rhel56_x86_64.qcow2
+  command: glance --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }} image-create --name rhel-5.6 --is-public false --container-format bare --disk-format qcow2 --copy-from http://c250663.r63.cf1.rackcdn.com/rhel56_x86_64.qcow2
 
 - name: Assign VM image to DEV environment
   command: glance --os-username={{ OS_USERNAME }} --os-password={{ OS_PASSWORD }} --os-tenant-name={{ OS_TENANT_NAME }} --os-auth-url={{ OS_AUTH_URL }} member-create ubuntu-server-14.04 dev01
